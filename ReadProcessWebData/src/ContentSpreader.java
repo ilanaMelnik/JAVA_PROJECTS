@@ -13,17 +13,6 @@ import java.util.concurrent.Executors;
 
 
 public class ContentSpreader{
-    private String title    = "";
-    public void   setTitle(String data){ this.title = data; }
-    public String getTitle(){ return this.title; }
-
-    private String tags     = "";
-    public void   setTags(String tags){ this.tags = tags; }
-    public String getTags(){ return this.tags; }
-
-    private String language = "";
-    public void   setLanguage(String language){ this.language = language; }
-    public String getLanguage(){ return this.language; }
 
     private int numOfThreads = 0;
     public void setNumOfThreads(int coresAmount){ this.numOfThreads = coresAmount; }
@@ -52,8 +41,8 @@ public class ContentSpreader{
     // prepare tasks to be done by workers - each line treated by separate worker
     // implemented a pool thread. Amount of threads that will do the work is basing on amount of CPU cores
     // 1. create Thread pool
-    // 2. Run on results array, per result (consider it as incoming request that need to be processed) create and run worker,
-    // add the worker to the execution queue. executor will find available worker thread and give the task to it for processing it.
+    // 2. Run over results array, per result create and run worker
+    // 3. add the worker to the execution queue. executor will find available worker thread and give the task to it for processing it.
     public void filesSpreader(JSONArray allSearchResultLinesArray) {
 
         System.out.println("Prepare separate json files for all search results");
@@ -63,16 +52,23 @@ public class ContentSpreader{
         int lineIndex = 0;
 
         for (Object line : allSearchResultLinesArray) {
+            JSONObject item = new JSONObject();
 
+            //extract only specific fields
             String title    = (String) ((JSONObject) line).get("title");
             String tags     = (String) ((JSONObject) line).get("tags") != "" ? (String) ((JSONObject) line).get("tags") : null;
             String language = (String) ((JSONObject) line).get("language");
 
-            Runnable workerUnit = new WorkerThread(title,
-                                                    tags,
-                                                    language,
-                                                    lineIndex++,
-                                                    getBaseFileName());
+            //set
+            item.put("Title",    title);
+            item.put("tags",     tags);
+            item.put("Language", language);
+
+            //init worker obj
+            Runnable workerUnit = new WorkerThread(item,
+                                                   lineIndex++,
+                                                   getBaseFileName());
+            //run
             executorPool.execute(workerUnit);
         }
         executorPool.shutdown(); //executor pool will shut down when all tasks will be processed
@@ -89,21 +85,15 @@ public class ContentSpreader{
 // 2. create message of format: title, tags, language
 class WorkerThread implements Runnable {
 
-    String title        = "";
-    String tags         = "";
-    String language     = "";
-    int    lineIndex    = 0;
-    String baseFileName = "";
+    JSONObject line;
+    int        lineIndex    = 0;
+    String     baseFileName = "";
 
-    public WorkerThread(String title,
-                        String tags,
-                        String language,
-                        int    lineIndex,     //needed for file name
-                        String baseFileName){ //needed for file name
+    public WorkerThread(JSONObject line,
+                        int        lineIndex,
+                        String     baseFileName){
 
-        this.title        = title;
-        this.tags         = tags;
-        this.language     = language;
+        this.line         = line;
         this.lineIndex    = lineIndex;
         this.baseFileName = baseFileName;
     }
@@ -111,10 +101,8 @@ class WorkerThread implements Runnable {
 
     private String getCurrentTime(){
 
-        Date date = new Date();
         long milisecs = System.currentTimeMillis();
         SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy_HH_mm_ss.SSSS");
-
         return formatter.format(milisecs);
     }
 
@@ -128,11 +116,6 @@ class WorkerThread implements Runnable {
     //2. create JSON obj, with input data and write it to the file
    public void run() {
 
-       JSONObject singleResult = new JSONObject();
-       singleResult.put("title",    title);
-       singleResult.put("tags",     tags);
-       singleResult.put("language", language);
-
        File file = new File(buildFileName());
        PrintWriter my_writer = null;
 
@@ -143,7 +126,7 @@ class WorkerThread implements Runnable {
            }
 
            my_writer = new PrintWriter(new FileWriter(file));
-           my_writer.printf("%s\r\n", singleResult.toJSONString());
+           my_writer.printf("%s\r\n", line.toJSONString());
 
        } catch (IOException e) {
            e.printStackTrace();

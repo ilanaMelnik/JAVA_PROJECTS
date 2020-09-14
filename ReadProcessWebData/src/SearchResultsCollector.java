@@ -117,7 +117,7 @@ public class SearchResultsCollector {
     }
 
     // open json file with all search results and read all lines into JSONArray
-    // pass Array to the to the further processing of pool thread and workers
+    // pass JSONArray to the further processing
     public void fileContentProcess(String fullTestFileName) throws Exception {
 
         File file = new File(fullTestFileName);
@@ -152,14 +152,16 @@ public class SearchResultsCollector {
     }
 
 
+    // process is built from two steps:
+    // 1. Collect data from site (or simulate it as it was from site)
+    // 2. Spread data between files
     public static void main(String[] args) throws Exception {
 
         try {
-            //step 1
+
             SearchResultsCollector collector = new SearchResultsCollector();
             collector.prepareTestInputFile();
 
-            //step 2
             collector.fileContentProcess(collector.getFullTestFileName());
 
         } catch (Exception e) {
