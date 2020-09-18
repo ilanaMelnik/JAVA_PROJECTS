@@ -18,7 +18,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 
-public class SearchResultsCollector {
+public class SearchResultsCollectorSimulator {
 
     private String testFileName     = "SecurityResultGitHub";
     private String getTestFileName() {return testFileName;  }
@@ -44,7 +44,7 @@ public class SearchResultsCollector {
         return formatter.format(date);
     }
 
-    public SearchResultsCollector() {
+    public SearchResultsCollectorSimulator() {
 
         String fullTestFileName = getTestFileName() + "-" + getCurrentTime() + ".json";
         setFullTestFileName(fullTestFileName);
@@ -159,7 +159,7 @@ public class SearchResultsCollector {
 
         try {
 
-            SearchResultsCollector collector = new SearchResultsCollector();
+            SearchResultsCollectorSimulator collector = new SearchResultsCollectorSimulator();
             collector.prepareTestInputFile();
 
             collector.fileContentProcess(collector.getFullTestFileName());
