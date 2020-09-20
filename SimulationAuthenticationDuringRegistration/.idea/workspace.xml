@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f490d00f-b7c5-4404-b3d1-0df91862b003" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hgEuqNkgoxCp4MncytG4ULhDLZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ReadProcessWebData" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="JUnit.RegistrationTester.noDelayViaAuthentication">
+    <configuration name="RegistrationMain" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Registration" />
+      <module name="SimulationAuthenticationDuringRegistration" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;12er34&quot; &quot;12er34M$&quot; 3 10" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationMain" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="SimulationAuthenticationDuringRegistration" />
+      <useClassPathOnly />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTester" />
+      <option name="METHOD_NAME" value="sameDelay" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTester.WrongTokenReceived" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SimulationAuthenticationDuringRegistration" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTester" />
+      <option name="METHOD_NAME" value="WrongTokenReceived" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTester.delayViaAuthentication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SimulationAuthenticationDuringRegistration" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTester" />
+      <option name="METHOD_NAME" value="delayViaAuthentication" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTester.noDelayViaAuthentication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SimulationAuthenticationDuringRegistration" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTester" />
+      <option name="METHOD_NAME" value="noDelayViaAuthentication" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTester.vrongTokenReceived" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SimulationAuthenticationDuringRegistration" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTester" />
+      <option name="METHOD_NAME" value="vrongTokenReceived" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.RegistrationMain" />
+      <item itemvalue="JUnit.RegistrationTester.noDelayViaAuthentication" />
+      <item itemvalue="JUnit.RegistrationTester.delayViaAuthentication" />
+      <item itemvalue="JUnit.RegistrationTester.vrongTokenReceived" />
+      <item itemvalue="JUnit.RegistrationTester.WrongTokenReceived" />
+      <item itemvalue="JUnit.RegistrationMain" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RegistrationTester.noDelayViaAuthentication" />
+        <item itemvalue="JUnit.RegistrationMain" />
+        <item itemvalue="JUnit.RegistrationTester.delayViaAuthentication" />
+        <item itemvalue="JUnit.RegistrationTester.WrongTokenReceived" />
+        <item itemvalue="JUnit.RegistrationTester.vrongTokenReceived" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f490d00f-b7c5-4404-b3d1-0df91862b003" name="Default Changelist" comment="" />
+      <created>1600424560996</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600424560996</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600630753616">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600630753616" />
+    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1600626887226">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600626887226" />
+    <state x="675" y="414" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600631123138">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="675" y="414" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600631123138" />
+    <state x="721" y="205" width="992" height="594" key="#xdebugger.evaluate" timestamp="1600626726476">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="721" y="205" width="992" height="594" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600626726476" />
+    <state width="449" height="466" key="DebuggerActiveHint" timestamp="1600626366010">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="449" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600626366010" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600508721468">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600508721468" />
+    <state width="1877" height="454" key="GridCell.Tab.0.bottom" timestamp="1600631508701">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="454" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600631508701" />
+    <state width="1877" height="454" key="GridCell.Tab.0.center" timestamp="1600631508701">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="454" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600631508701" />
+    <state width="1877" height="454" key="GridCell.Tab.0.left" timestamp="1600631508701">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="454" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600631508701" />
+    <state width="1877" height="454" key="GridCell.Tab.0.right" timestamp="1600631508701">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="454" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600631508701" />
+    <state width="1877" height="386" key="GridCell.Tab.1.bottom" timestamp="1600630678015">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="386" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600630678015" />
+    <state width="1877" height="386" key="GridCell.Tab.1.center" timestamp="1600630678014">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="386" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600630678014" />
+    <state width="1877" height="386" key="GridCell.Tab.1.left" timestamp="1600630678014">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="386" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600630678014" />
+    <state width="1877" height="386" key="GridCell.Tab.1.right" timestamp="1600630678014">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="386" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600630678014" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1600631496256">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600631496256" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1600424734512">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600424734512" />
+    <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1600551150960">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600551150960" />
+    <state x="562" y="131" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600506117770">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="562" y="131" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600506117770" />
+    <state x="532" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1600630644687">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="532" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600630644687" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600550838626">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600550838626" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/RegistrationTester.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Registration.java</url>
+          <line>353</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SimulationAuthenticationDuringRegistration$RegistrationTester_noDelayViaAuthentication.ic" NAME="RegistrationTester.noDelayViaAuthentication Coverage Results" MODIFIED="1600626398121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
